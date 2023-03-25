@@ -16,9 +16,11 @@
 		D5DFBB6729CF273C009088A9 /* RocketNetWorkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFBB6629CF273C009088A9 /* RocketNetWorkService.swift */; };
 		D5DFBB6929CF2769009088A9 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFBB6829CF2769009088A9 /* Setting.swift */; };
 		D5DFBB6B29CF27C7009088A9 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFBB6A29CF27C7009088A9 /* MainPageViewController.swift */; };
-		D5DFBB6D29CF27F4009088A9 /* RocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFBB6C29CF27F4009088A9 /* RocketViewController.swift */; };
 		D5DFBB6F29CF2811009088A9 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFBB6E29CF2811009088A9 /* Launch.swift */; };
 		D5DFBB7129CF300E009088A9 /* SettingsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFBB7029CF300E009088A9 /* SettingsRepository.swift */; };
+		D5DFBB7329CF40CA009088A9 /* RocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFBB7229CF40CA009088A9 /* RocketViewController.swift */; };
+		D5DFBB7529CF5580009088A9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFBB7429CF5580009088A9 /* SettingsViewController.swift */; };
+		D5DFBB7729CF5597009088A9 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFBB7629CF5597009088A9 /* SettingsPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +35,11 @@
 		D5DFBB6629CF273C009088A9 /* RocketNetWorkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketNetWorkService.swift; sourceTree = "<group>"; };
 		D5DFBB6829CF2769009088A9 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		D5DFBB6A29CF27C7009088A9 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
-		D5DFBB6C29CF27F4009088A9 /* RocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketViewController.swift; sourceTree = "<group>"; };
 		D5DFBB6E29CF2811009088A9 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		D5DFBB7029CF300E009088A9 /* SettingsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRepository.swift; sourceTree = "<group>"; };
+		D5DFBB7229CF40CA009088A9 /* RocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketViewController.swift; sourceTree = "<group>"; };
+		D5DFBB7429CF5580009088A9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D5DFBB7629CF5597009088A9 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				D5DFBB6829CF2769009088A9 /* Setting.swift */,
+				D5DFBB7429CF5580009088A9 /* SettingsViewController.swift */,
+				D5DFBB7629CF5597009088A9 /* SettingsPresenter.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -136,7 +142,7 @@
 		D5DFBB6129CF26CC009088A9 /* Rocket */ = {
 			isa = PBXGroup;
 			children = (
-				D5DFBB6C29CF27F4009088A9 /* RocketViewController.swift */,
+				D5DFBB7229CF40CA009088A9 /* RocketViewController.swift */,
 			);
 			path = Rocket;
 			sourceTree = "<group>";
@@ -215,9 +221,11 @@
 				D5DFBB6B29CF27C7009088A9 /* MainPageViewController.swift in Sources */,
 				D5DFBB4829CF25C1009088A9 /* AppDelegate.swift in Sources */,
 				D5DFBB6729CF273C009088A9 /* RocketNetWorkService.swift in Sources */,
+				D5DFBB7529CF5580009088A9 /* SettingsViewController.swift in Sources */,
 				D5DFBB4A29CF25C1009088A9 /* SceneDelegate.swift in Sources */,
-				D5DFBB6D29CF27F4009088A9 /* RocketViewController.swift in Sources */,
 				D5DFBB7129CF300E009088A9 /* SettingsRepository.swift in Sources */,
+				D5DFBB7329CF40CA009088A9 /* RocketViewController.swift in Sources */,
+				D5DFBB7729CF5597009088A9 /* SettingsPresenter.swift in Sources */,
 				D5DFBB6929CF2769009088A9 /* Setting.swift in Sources */,
 				D5DFBB6F29CF2811009088A9 /* Launch.swift in Sources */,
 				D5DFBB6329CF270D009088A9 /* Rocket.swift in Sources */,
