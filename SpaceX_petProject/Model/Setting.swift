@@ -57,3 +57,7 @@ struct Setting: Codable {
     let type: SettingType
     let selectedIndex: Int
 }
+
+extension Setting: Hashable {
+    
+}

@@ -12,6 +12,7 @@ protocol RocketNetWorkService {
     
     func getLaunch(comletion:@escaping (Result<[Launch], Error>) -> Void)
 }
+
 enum Errors: Error {
     case invalidURL
     case invalidState
@@ -37,7 +38,7 @@ final class RocketNetWorkServiceImpl: RocketNetWorkService {
             completion(.failure(Errors.invalidURL))
             return
         }
-        let request = urlSession.dataTask(with: URLRequest(url: url)) { [jsonDecoder] data, response, error in
+        urlSession.dataTask(with: URLRequest(url: url)) { [jsonDecoder] data, response, error in
             switch(data, error) {
             case let (.some(data), nil):
                 do {
@@ -51,12 +52,30 @@ final class RocketNetWorkServiceImpl: RocketNetWorkService {
             default:
                 completion(.failure(Errors.invalidState))
             }
-            
         }
+        .resume()
     }
     
     func getLaunch(comletion: @escaping (Result<[Launch], Error>) -> Void) {
-        //
+        guard let url = URL(string: API.launches) else {
+            comletion(.failure(Errors.invalidState))
+            return
+        }
+        urlSession.dataTask(with: URLRequest(url: url)) { [jsonDecoder] data, response, error in
+            switch(data, error) {
+            case let (.some(data), nil):
+                do {
+                    let launches = try jsonDecoder.decode([Launch].self, from: data)
+                    comletion(.success(launches))
+                } catch {
+                    comletion(.failure(error))
+                }
+            case let (nil, .some(error)):
+                comletion(.failure(error))
+            default:
+                comletion(.failure(Errors.invalidState))
+            }
+        }
+        .resume()
     }
-    
 }

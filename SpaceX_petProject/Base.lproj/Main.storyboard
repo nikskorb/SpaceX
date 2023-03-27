@@ -3,6 +3,9 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Main Page View Controller-->
@@ -13,5 +16,40 @@
             </objects>
             <point key="canvasLocation" x="-55" y="-15"/>
         </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="ynE-rn-AZb">
+            <objects>
+                <viewController id="Sjc-Hx-pqL" customClass="SettingsViewController" customModule="SpaceX_petProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BKh-X7-wmA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="u0I-45-Mpj">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9pd-6J-oAT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u0I-45-Mpj" firstAttribute="leading" secondItem="9pd-6J-oAT" secondAttribute="leading" id="Jcr-0B-WVB"/>
+                            <constraint firstItem="u0I-45-Mpj" firstAttribute="top" secondItem="9pd-6J-oAT" secondAttribute="top" id="RRF-Qa-4X3"/>
+                            <constraint firstItem="9pd-6J-oAT" firstAttribute="trailing" secondItem="u0I-45-Mpj" secondAttribute="trailing" id="rGt-Ie-gxF"/>
+                            <constraint firstAttribute="bottom" secondItem="u0I-45-Mpj" secondAttribute="bottom" id="sq0-Tb-Vd3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="u0I-45-Mpj" id="ncx-A4-Dig"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="khz-WO-deP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="731" y="-15"/>
+        </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
