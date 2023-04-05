@@ -18,11 +18,13 @@
 		D5DFBB6B29CF27C7009088A9 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFBB6A29CF27C7009088A9 /* MainPageViewController.swift */; };
 		D5DFBB6F29CF2811009088A9 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFBB6E29CF2811009088A9 /* Launch.swift */; };
 		D5DFBB7129CF300E009088A9 /* SettingsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFBB7029CF300E009088A9 /* SettingsRepository.swift */; };
-		D5DFBB7329CF40CA009088A9 /* RocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFBB7229CF40CA009088A9 /* RocketViewController.swift */; };
 		D5DFBB7529CF5580009088A9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFBB7429CF5580009088A9 /* SettingsViewController.swift */; };
 		D5DFBB7729CF5597009088A9 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFBB7629CF5597009088A9 /* SettingsPresenter.swift */; };
 		D5DFBB7929CF601E009088A9 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFBB7829CF601E009088A9 /* SettingTableViewCell.swift */; };
 		D5DFBB7C29D1B28C009088A9 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFBB7B29D1B28C009088A9 /* Reusable.swift */; };
+		D5DFBB7E29DC4A44009088A9 /* RocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFBB7D29DC4A44009088A9 /* RocketViewController.swift */; };
+		D5DFBB8029DC55E8009088A9 /* RocketSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFBB7F29DC55E8009088A9 /* RocketSection.swift */; };
+		D5DFBB8229DC84E5009088A9 /* RocketButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DFBB8129DC84E5009088A9 /* RocketButtonCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,11 +41,13 @@
 		D5DFBB6A29CF27C7009088A9 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		D5DFBB6E29CF2811009088A9 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		D5DFBB7029CF300E009088A9 /* SettingsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRepository.swift; sourceTree = "<group>"; };
-		D5DFBB7229CF40CA009088A9 /* RocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketViewController.swift; sourceTree = "<group>"; };
 		D5DFBB7429CF5580009088A9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D5DFBB7629CF5597009088A9 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
 		D5DFBB7829CF601E009088A9 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		D5DFBB7B29D1B28C009088A9 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		D5DFBB7D29DC4A44009088A9 /* RocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketViewController.swift; sourceTree = "<group>"; };
+		D5DFBB7F29DC55E8009088A9 /* RocketSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketSection.swift; sourceTree = "<group>"; };
+		D5DFBB8129DC84E5009088A9 /* RocketButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketButtonCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +152,9 @@
 		D5DFBB6129CF26CC009088A9 /* Rocket */ = {
 			isa = PBXGroup;
 			children = (
-				D5DFBB7229CF40CA009088A9 /* RocketViewController.swift */,
+				D5DFBB7D29DC4A44009088A9 /* RocketViewController.swift */,
+				D5DFBB7F29DC55E8009088A9 /* RocketSection.swift */,
+				D5DFBB8129DC84E5009088A9 /* RocketButtonCollectionViewCell.swift */,
 			);
 			path = Rocket;
 			sourceTree = "<group>";
@@ -233,14 +239,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5DFBB6B29CF27C7009088A9 /* MainPageViewController.swift in Sources */,
+				D5DFBB8029DC55E8009088A9 /* RocketSection.swift in Sources */,
 				D5DFBB4829CF25C1009088A9 /* AppDelegate.swift in Sources */,
+				D5DFBB7E29DC4A44009088A9 /* RocketViewController.swift in Sources */,
 				D5DFBB6729CF273C009088A9 /* RocketNetWorkService.swift in Sources */,
 				D5DFBB7529CF5580009088A9 /* SettingsViewController.swift in Sources */,
 				D5DFBB4A29CF25C1009088A9 /* SceneDelegate.swift in Sources */,
 				D5DFBB7129CF300E009088A9 /* SettingsRepository.swift in Sources */,
 				D5DFBB7C29D1B28C009088A9 /* Reusable.swift in Sources */,
 				D5DFBB7929CF601E009088A9 /* SettingTableViewCell.swift in Sources */,
-				D5DFBB7329CF40CA009088A9 /* RocketViewController.swift in Sources */,
+				D5DFBB8229DC84E5009088A9 /* RocketButtonCollectionViewCell.swift in Sources */,
 				D5DFBB7729CF5597009088A9 /* SettingsPresenter.swift in Sources */,
 				D5DFBB6929CF2769009088A9 /* Setting.swift in Sources */,
 				D5DFBB6F29CF2811009088A9 /* Launch.swift in Sources */,

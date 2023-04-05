@@ -35,6 +35,9 @@ final class SettingsRepositoryImpl: SettingsRepository {
             return
         }
         userDefaults.set(data, forKey: Key.setting)
+        /*
+        сохранит настройки локально          
+        */
     }
     
     func get() -> [Setting] {

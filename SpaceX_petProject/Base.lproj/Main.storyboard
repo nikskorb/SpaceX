@@ -38,9 +38,6 @@
                             <constraint firstAttribute="bottom" secondItem="u0I-45-Mpj" secondAttribute="bottom" id="sq0-Tb-Vd3"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="tableView" destination="u0I-45-Mpj" id="ncx-A4-Dig"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="khz-WO-deP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
