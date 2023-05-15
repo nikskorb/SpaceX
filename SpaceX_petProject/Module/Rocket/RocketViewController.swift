@@ -67,40 +67,23 @@ private extension RocketViewController {
         }
     }
     
-//    func makeDataSource() -> UICollectionViewDiffableDataSource<RocketSection, RocketItem> {
-//        .init(collectionView: collectionView) { [weak self] collectionView, IndexPath, item in
-//            switch item {
-//            case .header(image, title):
-//                fatalError("header")
-//            case .info(title, value, _):
-//                fatalError("info")
-//            case .button:
-//                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RocketButtonCollectionViewCell.identifire,
-//                                                              for: IndexPath)
-//                (cell as? RocketButtonCollectionViewCell)?.onOpenLauches = {
-//                    print("test")
-//                }
-//                return cell
-//            }
-//        }
-//
-//    }
     func makeDataSource() -> UICollectionViewDiffableDataSource<RocketSection, RocketItem> {
-        .init(collectionView: collectionView) { collectionView, indexPath, item in
+        .init(collectionView: collectionView) { [weak self] collectionView, IndexPath, item in
             switch item {
-            case .header(let image, let title):
+            case .header(image, title):
                 fatalError("header")
-            case .info(let title, let value, _):
+            case .info(title, value, _):
                 fatalError("info")
             case .button:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RocketButtonCollectionViewCell.identifire,
-                                                              for: indexPath)
+                                                              for: IndexPath)
                 (cell as? RocketButtonCollectionViewCell)?.onOpenLauches = {
                     print("test")
                 }
                 return cell
             }
         }
+
     }
 }
 
@@ -130,7 +113,5 @@ private extension RocketViewController: UICollectionViewDelegateFlowLayout {
             return cell
         }
     }
-    )
-//    private lazy var dataSource = makeDataSource()
-    
+    private lazy var dataSource = makeDataSource()
 }

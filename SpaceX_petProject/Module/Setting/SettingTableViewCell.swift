@@ -18,18 +18,14 @@ final class SettingTableViewCell: UITableViewCell {
         
         required init?(coder: NSCoder) {
             fatalError("Error")
-            /*
-                требуемый протоколом NSCoding на который подписан тип UITableViewCell, опциональный инициализатор, в таких случаях (когда нам не нужен класс SettingTableViewCell для декодирования) лучше написать fatalError("Error") для предотвращения случайного использования этого метода.
-            */
+
         }
 
     
     override func prepareForReuse() {
         super.prepareForReuse()
         segmentControl.removeAllSegments()
-        /*
-         Метод prepareForReuse() вызывается у ячейки таблицы всякий раз, когда она готовится к повторному использованию. В этом методе удаляются все предыдущие сегменты segmentControl для того, чтобы не было сбоев в отображении сегментов на новых ячейках, которые будут использоваться повторно. Таким образом, метод segmentControl.removeAllSegments() гарантирует, что segmentControl будет находиться в правильном состоянии перед повторным использованием ячейки.
-        */
+
     }
     
     func configure(with setting: Setting, settingChanged: @escaping(Setting) -> Void) {
@@ -38,18 +34,12 @@ final class SettingTableViewCell: UITableViewCell {
         }
         nameLabel.text = setting.type.name
         segmentControl.selectedSegmentIndex = setting.selectedIndex
-            /*
-             configure используется для настройки пользовательского интерфейса в соответствии с переданным объектом setting. Она добавляет каждую доступную единицу измерения в UISegmentedControl с помощью метода insertSegment, устанавливает название типа настройки в UILabel nameLabel и устанавливает выбранный пользователем вариант в selectedIndex UISegmentedControl с помощью свойства selectedSegmentIndex
-             */
-        
-//        segmentControl remove action
+
         segmentControl.addAction(UIAction { [segmentControl] _ in
                 let setting = Setting(type: setting.type,
                                       selectedIndex: segmentControl.selectedSegmentIndex)
                 settingChanged(setting)
-            /*
-             добавляет замыкание UIAction в UISegmentedControl, которое вызывается при изменении выбранного пользователем варианта. Замыкание создает новый объект Setting на основе типа настройки и выбранного пользователем варианта, и вызывает замыкание settingChanged с этим новым объектом Setting в качестве аргумента.
-             */
+
         },
             for: .valueChanged
         )

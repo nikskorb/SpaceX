@@ -87,8 +87,8 @@
 				D5DFBB4729CF25C1009088A9 /* AppDelegate.swift */,
 				D5DFBB4929CF25C1009088A9 /* SceneDelegate.swift */,
 				D5DFBB4D29CF25C1009088A9 /* Main.storyboard */,
-				D5DFBB5029CF25C2009088A9 /* Assets.xcassets */,
 				D5DFBB5229CF25C2009088A9 /* LaunchScreen.storyboard */,
+				D5DFBB5029CF25C2009088A9 /* Assets.xcassets */,
 				D5DFBB5529CF25C2009088A9 /* Info.plist */,
 			);
 			path = SpaceX_petProject;

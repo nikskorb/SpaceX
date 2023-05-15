@@ -26,13 +26,10 @@ final class SettingPresenterImpl: SettingPresenter {
         else {
             return
         }
-        /*
-        изменяет значение, принимает параметром измененный объект setting в ячейке, сперва так же как и в случае с present устанавливает в текущие настройки settingRepository.get(), затем перебирает и проверяет на соответствие массив setting.type, когда находит соотв., удаляет из массива данную конфигу настроек и её в переданный в функцию массив,
-         затем сэйвит
-        */
+        
         currentSettings.remove(at: changedIndex)
         currentSettings.insert(setting, at: changedIndex)
-        settingRepository.save(currentSettings) //засэйвит текущий элемент массива настроек пользователя 
+        settingRepository.save(currentSettings) 
     }
     
     
